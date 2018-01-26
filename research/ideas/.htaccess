@@ -1,0 +1,5 @@
+AuthUserFile /Volumes/Sail2/komathnk/Sites/research/ideas/.htpasswd
+AuthName "Access not authorized"
+AuthType Basic
+
+require user sailer
