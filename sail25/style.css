@@ -119,3 +119,70 @@ footer {
     color: white;
     margin-top: 50px;
 }
+/* Container for the buttons */
+.action-bar {
+    margin-top: 25px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* The Primary RSVP Button */
+.btn-rsvp {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    border: 2px solid #007bff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.btn-rsvp:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* The Stylized Join Remotely Button */
+.btn-remote {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #ffffff;
+    padding: 12px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    display: inline-flex;
+    align-items: center;
+    border: 2px solid rgba(52, 152, 219, 0.7);
+    transition: all 0.3s ease;
+    backdrop-filter: blur(5px); /* Soft modern blur effect */
+}
+
+.btn-remote:hover {
+    background-color: #3498db;
+    border-color: #3498db;
+    color: #ffffff;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(52, 152, 219, 0.3);
+}
+
+/* Adding a small dot icon for the "Live" feel */
+.btn-remote::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background-color: #2ecc71; /* Green status dot */
+    border-radius: 50%;
+    margin-right: 10px;
+    box-shadow: 0 0 8px #2ecc71;
+}
