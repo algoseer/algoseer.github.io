@@ -134,6 +134,23 @@ h2 {
   margin-right: 0.4rem;
 }
 
+.code-project {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.code-project:last-child { border-bottom: none; }
+.code-project h2 { margin: 0 0 0.5rem; }
+
+.code-graphic {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  margin-top: 0.75rem;
+}
+
 footer.site-footer {
   max-width: var(--max-width);
   margin: 0 auto;

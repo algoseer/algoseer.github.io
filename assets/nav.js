@@ -11,7 +11,7 @@ var NAV_SECTIONS = [
   {
     category: "Code",
     items: [
-      { label: "LESA (hull detection)", href: "https://github.com/algoseer/largest-empty-sector-angle" }
+      { label: "Code", href: "/code.html" }
     ]
   },
   {
