@@ -1,61 +1,50 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
-<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
-<link rel="stylesheet" href="jemdoc.css" type="text/css" />
-<title>About Me</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Naveen Kumar</title>
+<link rel="stylesheet" href="/assets/style.css" />
+<script>
+(function () {
+  var stored = localStorage.getItem("theme");
+  var theme = stored === "light" || stored === "dark"
+    ? stored
+    : (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+  document.documentElement.setAttribute("data-theme", theme);
+})();
+</script>
 </head>
 <body>
-<script type="text/javascript">
-var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-</script>
-<script type="text/javascript">
-try {
-    var pageTracker = _gat._getTracker("UA-31046507-1");
-    pageTracker._trackPageview();
-} catch(err) {}</script>
-<table summary="Table for page layout." id="tlayout">
-<tr valign="top">
-<td id="layout-menu">
-<div class="menu-category">Research</div>
-<div class="menu-item"><a href="research/patents.html">Patents</a></div>
-<div class="menu-item"><a href="research/">Publications</a></div>
-<div class="menu-category">Interest</div>
-<div class="menu-item"><a href="http://algoseer.tumblr.com/">Photoblog</a></div>
-<div class="menu-category">Links</div>
-<div class="menu-item"><a href="https://sites.disney.com/waltdisneyimagineering/our-story">Imagineering</a></div>
-<div class="menu-item"><a href="http://sail.usc.edu">SAIL</a></div>
-<div class="menu-item"><a href="http://usc.edu">USC</a></div>
-<div class="menu-item"><a href="http://iitkgp.ac.in">IIT&nbsp;Kharagpur</a></div>
-</td>
-<td id="layout-content">
-<p><br /></p>
-<table class="imgtable"><tr><td>
-<img src="naveen_getty.jpg" alt="naveen_getty" width="200px" height="240px" />&nbsp;</td>
-<td align="left"><p><b>Naveen Kumar </b><br/>
-Research Scientist, 
-<a href="https://la.disneyresearch.com/">Disney Research</a><br />
-<a href="http://waltdisneyimagineering.com">Walt Disney Imagineering</a><br />
-Los Angeles, USA <br /><br/>
-Ph.D., University of Southern California<br />
-B.Tech, IIT Kharagpur<br /></p>
-</td></tr></table>
-<h2>About</h2>
+<div class="layout">
+<nav class="site-nav" id="site-nav"></nav>
+<main class="content">
+
+<div class="profile">
+<img src="/naveen_getty.jpg" alt="Naveen Kumar" width="200" height="240" />
+<div>
+<p class="name">Naveen Kumar</p>
+<p>Research Scientist, <a href="https://la.disneyresearch.com/">Disney Research</a></p>
+<p><a href="https://waltdisneyimagineering.com">Walt Disney Imagineering</a></p>
+<p>Los Angeles, USA</p>
+<p>Ph.D., University of Southern California</p>
+<p>B.Tech, IIT Kharagpur</p>
+</div>
+</div>
+
+<h1>About</h1>
 <p>I received my Ph.D. in Electrical Engineering at the University of Southern California and a B.Tech. degree in Instrumentation Engineering from the Indian Institute of Technology, Kharagpur, India. I currently work at Walt Disney Imagineering R&amp;D Los Angeles, USA. I am originally from Kolkata, India.</p>
 <p>My broad research interests lie at the nexus of Signal Processing and Machine Learning for speech, multimedia and multimodal applications. These days I work on better understanding different aspects of human-human communication, in the hope that some of these can be imparted to embodied agents for better human-computer interaction. As a result, I am deeply fascinated with speech, language and the way people use these to achieve different social goals.</p>
-<p>While the diverse nature of my work allows for exploration of fields not traditionally considered Signal Processing, it often also inspires new ideas that can only come as a result of thinking out of the box. </p>
+<p>While the diverse nature of my work allows for exploration of fields not traditionally considered Signal Processing, it often also inspires new ideas that can only come as a result of thinking out of the box.</p>
+
 <h2>Updates</h2>
-<ul>
-<li><p><b> Jan 2026 </b> : Helping organize SAIL's 25th anniversary workshop at USC <a href=sail25>(Website)</a> </li>
-<li><p><b> Feb 2023 </b> : Organized a workshop on "Language-Based AI Character Interaction with Children" at IWSDS 2023 in Los Angeles.<a href=https://aichildinteraction.github.io/>(Website)</a></li>
-<li><p><b>Oct 2018</b> : Joined <a href="https://disneyresearch.com/">Disney Research</a>, Los Angeles.<br /></p>
-</li>
-</ul>
-</td>
-</tr>
-</table>
+<ul class="updates-list" id="updates-list"></ul>
+
+</main>
+</div>
+
+<script src="/assets/nav.js"></script>
+<script src="/data/updates.js"></script>
+<script src="/assets/updates.js"></script>
 </body>
 </html>
