@@ -38,7 +38,8 @@ function renderNav() {
   var mount = document.getElementById("site-nav");
   if (!mount) return;
   var here = normalizePath(window.location.pathname);
-  var html = "";
+  var html = '<div class="nav-item"><a href="/"' +
+    (here === "/" ? ' aria-current="page"' : "") + ">Home</a></div>";
   NAV_SECTIONS.forEach(function (section) {
     html += '<div class="nav-category">' + section.category + "</div>";
     section.items.forEach(function (item) {
